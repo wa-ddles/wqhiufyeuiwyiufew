@@ -16,7 +16,7 @@ observer.observe(video, {
 })
 ```
 ## 使用方法  
-1.下载整个extension文件  
+1.下载整个extension文件夹  
 2.打开浏览器扩展，打开开发者模式  
 3.加载extension文件并启用  
 ### 参考  
