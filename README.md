@@ -1,2 +1,17 @@
-# browser-extentions
-倍速插件
+# 倍速插件
+功能：  
+-在原有b站倍速增加了2.5倍速和3倍速  
+-自定义倍速 （除非刷新，否则可以持久化保存）参考以下
+```javascript
+const observer = new MutationObserver((mutations) => {
+  mutations.forEach((mutation) => {
+      if (mutation.attributeName === 'src') {
+          video.playbackRate = rate
+      }
+  })
+})
+observer.observe(video, {
+    attributes: true,
+    attributeFilter: ['src']
+})
+```
