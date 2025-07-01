@@ -32,5 +32,6 @@ vobserver.observe(video, {
 -隐约猜到如果代码任何一处有毛病，就会影响b站的图片加载等等，于是又把代码搬回定时器  
 -才发现setTimeout的关键问题。改用setInterval  
 -新增了番剧页面的倍速功能  
+--改成appendChild而非prepend增加自定义框，减少了插件发病的次数
 **总而言之：差点全部木大**
 
